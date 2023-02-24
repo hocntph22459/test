@@ -1,28 +1,28 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.js";
-import { render, router } from "./libs";
-import adminproduct from "./pages/admin/adminproduct";
-import homepage from "./pages/homepage";
-import product_deltaipage from "./pages/product-deltaipage";
-import productpage from "./pages/productpage";
+import { render, router } from "./libs"
+import login from "./pages/login"
+import project from "./pages/project"
+import project_add from "./pages/project_add"
+import project_deltail from "./pages/project_deltail"
+import signin from "./pages/signin"
 
-const app = document.querySelector('#app');
-
+const app = document.querySelector("#app")
 
 router.on('/',()=>{
-    render(homepage,app)
+    render(project,app)
 })
-router.on('/product',()=>{
-    render(productpage,app)
+router.on('/project/add',()=>{
+    render(project_add,app)
 })
-
-
-router.on('/product/:id',(parmas)=>{
+router.on('/project/:id/edit',(parmas)=>{
     render(()=>{
-        return product_deltaipage(parmas)
+        return project_deltail(parmas)
     },app)
 })
-router.on('/admin/product',()=>{
-    render(adminproduct,app)
+router.on('/signin',()=>{
+    render(signin,app)
 })
+router.on('/login',()=>{
+    render(login,app)
+})
+
 router.resolve()

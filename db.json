@@ -1,3 +1,43 @@
 {
-  "project": []
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server 1",
+      "image": "",
+      "link": "/"
+    },
+    {
+      "title": "acxaaa",
+      "image": [
+        "https://res.cloudinary.com/dpy2w5vus/image/upload/v1677226659/ecma/yolfx9tjp4vl3snisfug.png"
+      ],
+      "id": 2
+    },
+    {
+      "title": "aa",
+      "image": [
+        "https://res.cloudinary.com/dpy2w5vus/image/upload/v1677226443/ecma/kdhdmoa9oq8ofsebdtyh.png"
+      ],
+      "id": 3
+    },
+    {
+      "title": "a",
+      "image": [
+        "https://res.cloudinary.com/dpy2w5vus/image/upload/v1677226719/ecma/ffv8swcbvz2kblnipvok.png"
+      ],
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "email": "bimbimmiu888@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "123",
+      "id": 2
+    }
+  ]
 }
